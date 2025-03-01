@@ -23,7 +23,7 @@ module.exports = defineConfig({
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
     projectId: "smu7ug",
-    baseUrl: "https://buggy.justtestit.org/",
+    baseUrl: "https://www.braingle.com/trivia/quiz.php?id=10723",
     chromeWebSecurity: true
   },
 });
