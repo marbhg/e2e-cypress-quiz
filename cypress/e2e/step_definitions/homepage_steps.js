@@ -6,7 +6,9 @@ import {
   
 
   When("the user visits homepage", () => {
-    cy.visit("/");
+    cy.visit("/quiz.php?id=10723");
+    //Aceptar las cookies
+    cy.contains("AGREE").click()
   });
 
  

@@ -1,7 +1,7 @@
-Feature: Open Bootcamp QA
+Feature: Visit home page 
 
-    As studen, I want to open bootcamp qa, so I can see training courses
+   As user visit I want to visit Homegage
 
 
-    Scenario: Visit Bootcamp QA Web
-        When the user visits homepage
+    Scenario: Visit 
+        Given the user visits homepage
