@@ -5,3 +5,4 @@ Feature: Visit home page
 
     Scenario: Visit 
         Given the user visits homepage
+        When the user select answer "Text direction"
