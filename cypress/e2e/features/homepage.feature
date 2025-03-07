@@ -13,7 +13,7 @@ Feature: Visit home page
         And the user select answer "Meta"
         And the user select answer "Link"
         And the user select answer "Frame"
-        And the user click on submit answer
+        And the user click on submit answers
 
 
 

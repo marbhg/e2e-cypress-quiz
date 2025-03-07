@@ -14,3 +14,7 @@ import {
  When("the user select answer {string}", (answer)=> {
   cy.contains(answer).click()
  })
+
+ When("the user click on submit answers", () => {
+  cy.contains("Submit Answers").click()
+ })
