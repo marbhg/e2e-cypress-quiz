@@ -22,8 +22,8 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
-    projectId: "smu7ug",
-    baseUrl: "https://www.braingle.com/trivia/quiz.php?id=10723",
+    projectId: "smu7ug",    
+    baseUrl:"https://www.braingle.com/trivia/quiz.php?id=10723",
     chromeWebSecurity: true
-  },
+  }
 });
