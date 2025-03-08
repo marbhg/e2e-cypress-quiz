@@ -25,10 +25,9 @@ import {
   cy.contains(scoretext).should('be.visible');
  })
 
- When("user see score letter {string}", (scoreletter) => {
-  //Obtenemos el elemento con la clase Gigantic 
-  cy.get(".gigantic")
-
- })
+ Then("the user see score letter {string}", (scoreletter) => {
+  console.log("Paso 'the user see score letter' ejecutado");
+  cy.get(".gigantic").should('have.text', scoreletter);
+});
 
 
