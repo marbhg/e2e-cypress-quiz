@@ -36,4 +36,3 @@ Then("the user see for question {string} correction {string}", (questionnumber, 
   // Dentro del padre bucamos la palabra Wrong o correct (correctiontext) usando filter y contains
   cy.contains("Question #" + questionnumber).parent().parent().filter(':contains("' + correctiontext + '")').should('be.visible');
 });
-
