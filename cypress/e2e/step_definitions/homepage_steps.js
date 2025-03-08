@@ -30,9 +30,10 @@ import {
   cy.get(".gigantic").should('have.text', scoreletter);
 });
 
-Then("the user see for question {string} correction {string}", (questionnumber) => {
-  //Obtenemos el elemento con el texto segun el numero de pregunta (contanis)
-  //Obtenemos el padre la caja que contiene la pregunta (parent)
-  //Dentro del padre bucamos la palabra Wrong o correct (correctiontext) usando filter y contains
-cy.contains("Question #"+questionnumber).parent().parent().filter(':contains'("'+correctiontext+'")). should('be.visible');
+Then("the user see for question {string} correction {string}", (questionnumber, correctiontext) => {
+  // Obtenemos el elemento con el texto segun el numero de pregunta (contanis)
+  // Obtenemos el padre la caja que contiene la pregunta (parent)
+  // Dentro del padre bucamos la palabra Wrong o correct (correctiontext) usando filter y contains
+  cy.contains("Question #" + questionnumber).parent().parent().filter(':contains("' + correctiontext + '")').should('be.visible');
 });
+
