@@ -14,7 +14,8 @@ Feature: Visit home page
         And the user select answer "Link"
         And the user select answer "Frame"
         And the user click on submit answers
-
+        Then user see score "You got 4 correct out of 10, or 40%."
+        And the user see score letter "D"
 
 
 

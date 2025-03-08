@@ -12,9 +12,23 @@ import {
   });
 
  When("the user select answer {string}", (answer)=> {
-  cy.contains(answer).click()
+  //Buscar el elemento que contenga el elemento exacto
+  cy.contains(new RegExp(`^${answer}$`)).click();
  })
 
  When("the user click on submit answers", () => {
   cy.contains("Submit Answers").click()
  })
+
+ When("user see score {string}", (scoretext) => {
+  //Buscamos el elemento que contenga el texto y comprobamos que esta visible 
+  cy.contains(scoretext).should('be.visible');
+ })
+
+ When("user see score letter {string}", (scoreletter) => {
+  //Obtenemos el elemento con la clase Gigantic 
+  cy.get(".gigantic")
+
+ })
+
+
